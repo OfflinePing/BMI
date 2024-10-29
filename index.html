@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI-RECHNER</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI-RECHNER</h1>
+        <p>Bitte geben Sie Ihr Gewicht und Ihre Größe ein, um Ihren BMI zu berechnen.</p>
+        <form action="bmi.php" method="post">
+            <input type="number" min="1" max="1000" step="0.01"  name="gewicht" placeholder="Gewicht in kg" required>
+            <input type="number"  min="1" max="1000"  step="0.01" name="groesse" placeholder="Groesse in metern" required>
+            <button type="submit" name="submit">Berechnen</button>
+        </form>
+    </div>
+<footer>
+    <p class="footer">© 2024 BMI-RECHNER - Gesundheitsamt Emden</p>
+</footer>
+</body>
+</html>
